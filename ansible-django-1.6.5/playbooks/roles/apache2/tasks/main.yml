@@ -5,4 +5,7 @@
   apt: name=libapache2-mod-wsgi state=latest
 
 - name: put apache2 ext configuration file for opencomputemanager
-  template: src=opencomputemanager-wsgi-conf.j2 dest=/etc/apache2/conf-enabled/opencomputemanager.conf
+  template: src=opencomputemanager-wsgi-conf.j2 dest=/etc/apache2/conf-available/opencomputemanager.conf
+
+- name: make symbolic link to conf-enable
+  file: src=/etc/apache2/conf-available/opencomputemanager.conf dest=/etc/apache2/conf-enabled/opencomputemanager.conf state=link

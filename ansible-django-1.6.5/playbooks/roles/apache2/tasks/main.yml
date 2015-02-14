@@ -1,2 +1,5 @@
 - name: Install latest apache2
   apt: name=apache2 state=latest
+
+- name: Install latest libapache2-mod-wsgi
+  apt: name=libapache2-mod-wsgi state=latest

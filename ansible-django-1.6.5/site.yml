@@ -1,1 +1,1 @@
-- include: playbooks/roles/common.yml
+- include: playbooks/common.yml

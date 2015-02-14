@@ -1,0 +1,8 @@
+WSGIScriptAlias /opencomputemanager /usr/share/opencomputemanager/dashboard/wsgi/django.wsgi
+WSGIDaemonProcess opencomputemanager user=ocp group=ocp processes=3 threads=10
+WSGIProcessGroup opencomputemanager
+Alias /static /usr/share/opencomputemanager/dashboard/static/
+<Directory /usr/share/opencomputemanager/dashboard/wsgi>
+  Order allow,deny
+  Allow from all
+</Directory>

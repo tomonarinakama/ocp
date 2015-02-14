@@ -3,3 +3,6 @@
 
 - name: Install latest libapache2-mod-wsgi
   apt: name=libapache2-mod-wsgi state=latest
+
+- name: put apache2 ext configuration file for opencomputemanager
+  template: src=opencomputemanager-wsgi-conf.j2 dest=/etc/apache2/conf-enabled/opencomputemanager.conf

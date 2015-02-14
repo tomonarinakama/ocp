@@ -1,0 +1,2 @@
+- name: Install latest apache2
+  apt: name=apache2 state=latest

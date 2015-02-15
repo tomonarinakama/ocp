@@ -5,4 +5,4 @@
   pip: name=virtualenv state=latest
 
 - name: create virtualenv dir
-  pip: virtualenv=/root/ENV
+  pip: virtualenv_command=/root/ENV

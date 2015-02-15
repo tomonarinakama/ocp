@@ -3,3 +3,6 @@
 
 - name: install latest virtualenv
   pip: name=virtualenv state=latest
+
+- name: create virtualenv dir
+  pip: virtualenv=/root/ENV

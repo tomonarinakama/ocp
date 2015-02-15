@@ -1,2 +1,5 @@
 - name: install latest python-pip
   apt: name=python-pip state=latest
+
+- name: install latest virtualenv
+  pip: name=virtualenv state=latest

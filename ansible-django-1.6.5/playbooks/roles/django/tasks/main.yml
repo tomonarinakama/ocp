@@ -1,2 +1,11 @@
 - name: install django 1.6.5
   pip: name=django version=1.6.5 virtualenv=/root/ENV
+
+- name: enter virtual env
+  command: source /root/ENV/bin/activate
+
+- name: create project directory
+  file: path=/usr/share/opencomputemanager state=direcotory
+
+- name: create project
+  command: django-admin.py startproject opencomputemanager /usr/share/opencomputemanager 

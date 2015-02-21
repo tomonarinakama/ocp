@@ -1,2 +1,3 @@
 - include: playbooks/common.yml
 - include: playbooks/apache2.yml
+- include: playbooks/django.yml

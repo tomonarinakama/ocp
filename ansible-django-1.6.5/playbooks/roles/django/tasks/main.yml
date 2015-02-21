@@ -1,0 +1,2 @@
+- name: install django 1.6.5
+  pip: name=django version=1.6.5 virtualenv=/root/ENV

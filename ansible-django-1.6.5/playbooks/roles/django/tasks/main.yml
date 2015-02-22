@@ -5,4 +5,4 @@
   file: path=/usr/share/opencomputemanager state=directory
 
 - name: create project
-  command: /root/ENV/lib/python2.7/site-packages/django/bin/django-admin.py startproject opencomputemanager /usr/share/opencomputemanager 
+  command: /root/ENV/bin/django-admin.py startproject opencomputemanager /usr/share/opencomputemanager 

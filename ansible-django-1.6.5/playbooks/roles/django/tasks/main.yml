@@ -2,7 +2,7 @@
   pip: name=django version=1.6.5 virtualenv=/root/ENV
 
 - name: create project directory
-  file: path=/usr/share/opencomputemanager state=direcotory
+  file: path=/usr/share/opencomputemanager state=directory
 
 - name: create project
   command: /root/ENV/lib/python2.7/site-packages/django/bin/django-admin.py startproject opencomputemanager /usr/share/opencomputemanager 
